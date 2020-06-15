@@ -1,0 +1,7 @@
+
+config/database.php
+runtime/log/single.log
+runtime/log/single_error.log
+runtime/log/single_sql.log
+runtime/sess/sess_nf26ier0nct4uttrkmjbijlbd4
+runtime/temp/725136a2e18b65f50ed150ed85c875a1.php

@@ -10255,3 +10255,2048 @@
 [ sql ] [ SQL ] SELECT * FROM `system_menu` WHERE  `status` = 1 ORDER BY `sort` DESC,`id` ASC [ RunTime:0.000448s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `system_config` [ RunTime:0.000632s ]
 [ sql ] [ SQL ] SELECT `name`,`value` FROM `system_config` [ RunTime:0.000233s ]
+---------------------------------------------------------------
+
+[2020-06-15T14:57:52+08:00] 127.0.0.1 POST lxb.com/index/user/do_login.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.043002s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_users` [ RunTime:0.256015s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xy_users` WHERE  `tel` = '17010153055' [ RunTime:0.062003s ]
+[ sql ] [ SQL ] SELECT `id`,`pwd`,`salt`,`pwd_error_num`,`allow_login_time`,`status`,`login_status`,`headpic` FROM `xy_users` WHERE  `tel` = '17010153055' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] UPDATE `xy_users`  SET `pwd_error_num` = 0 , `allow_login_time` = 0 , `login_status` = 1 , `ip` = '127.0.0.1'  WHERE  `id` = 19 [ RunTime:0.369021s ]
+---------------------------------------------------------------
+
+[2020-06-15T14:57:55+08:00] 127.0.0.1 GET lxb.com/index/index/home.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002001s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_index_msg` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT `content` FROM `xy_index_msg` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_users` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_users` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_banner` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_banner` [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SELECT * FROM `xy_index_msg` WHERE  `id` = 6 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_goods_cate` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_goods_cate` ORDER BY `id` ASC [ RunTime:0.001000s ]
+---------------------------------------------------------------
+
+[2020-06-15T14:57:56+08:00] 127.0.0.1 GET lxb.com/index/Index/getInfo
+[ sql ] [ DB ] CONNECT:[ UseTime:0.041003s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.003000s ]
+---------------------------------------------------------------
+
+[2020-06-15T14:57:56+08:00] 127.0.0.1 GET lxb.com/index/Index/getTongji
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_users` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `xy_users` WHERE  `status` = 1  AND `addtime` BETWEEN 1592064000 AND 1592204276 [ RunTime:0.089005s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_goods_list` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `xy_goods_list` [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_convey` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT SUM(`num`) AS tp_sum FROM `xy_convey` WHERE  `status` = 1  AND `endtime` BETWEEN 1592150400 AND 1592204276 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `xy_convey` WHERE  `status` = 1  AND `addtime` BETWEEN 1592150400 AND 1592204276 [ RunTime:0.002001s ]
+---------------------------------------------------------------
+
+[2020-06-15T14:57:56+08:00] 127.0.0.1 GET lxb.com/index/Index/getDanmu
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+
+[2020-06-15T14:59:17+08:00] 127.0.0.1 GET lxb.com/index/my/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_users` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT `username`,`tel`,`level`,`id`,`headpic`,`balance`,`freeze_balance`,`lixibao_balance`,`invite_code`,`show_td` FROM `xy_users` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_convey` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT SUM(`commission`) AS tp_sum FROM `xy_convey` WHERE  `status` IN (1,3)  AND `uid` = 19 [ RunTime:0.028001s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002001s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_level` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `name` FROM `xy_level` WHERE  `level` = 0 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_lixibao` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT SUM(`num`) AS tp_sum FROM `xy_lixibao` WHERE  `status` = 1  AND `uid` = 19 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+
+[2020-06-15T14:59:28+08:00] 127.0.0.1 GET lxb.com/index/ctrl/set.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004001s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+
+[2020-06-15T14:59:30+08:00] 127.0.0.1 GET lxb.com/index/my/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_users` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `username`,`tel`,`level`,`id`,`headpic`,`balance`,`freeze_balance`,`lixibao_balance`,`invite_code`,`show_td` FROM `xy_users` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_convey` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT SUM(`commission`) AS tp_sum FROM `xy_convey` WHERE  `status` IN (1,3)  AND `uid` = 19 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_level` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `name` FROM `xy_level` WHERE  `level` = 0 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_lixibao` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT SUM(`num`) AS tp_sum FROM `xy_lixibao` WHERE  `status` = 1  AND `uid` = 19 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+
+[2020-06-15T14:59:35+08:00] 127.0.0.1 GET lxb.com/index/index/home.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_index_msg` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `content` FROM `xy_index_msg` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_users` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_users` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_banner` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_banner` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SELECT * FROM `xy_index_msg` WHERE  `id` = 6 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_goods_cate` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_goods_cate` ORDER BY `id` ASC [ RunTime:0.000000s ]
+---------------------------------------------------------------
+
+[2020-06-15T14:59:36+08:00] 127.0.0.1 GET lxb.com/index/Index/getInfo
+[ sql ] [ DB ] CONNECT:[ UseTime:0.033001s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.002000s ]
+---------------------------------------------------------------
+
+[2020-06-15T14:59:36+08:00] 127.0.0.1 GET lxb.com/index/Index/getTongji
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_users` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `xy_users` WHERE  `status` = 1  AND `addtime` BETWEEN 1592064000 AND 1592204376 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_goods_list` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `xy_goods_list` [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015001s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_convey` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT SUM(`num`) AS tp_sum FROM `xy_convey` WHERE  `status` = 1  AND `endtime` BETWEEN 1592150400 AND 1592204376 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.020001s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `xy_convey` WHERE  `status` = 1  AND `addtime` BETWEEN 1592150400 AND 1592204376 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+
+[2020-06-15T14:59:36+08:00] 127.0.0.1 GET lxb.com/index/Index/getDanmu
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+
+[2020-06-15T14:59:38+08:00] 127.0.0.1 GET lxb.com/index/ctrl/vip
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_pay` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_pay` WHERE  `status` = 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_level` [ RunTime:0.002001s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_level` ORDER BY `level` ASC [ RunTime:0.019001s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_users` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_users` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+
+[2020-06-15T14:59:45+08:00] 127.0.0.1 GET lxb.com/index/index/home.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_index_msg` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `content` FROM `xy_index_msg` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_users` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_users` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_banner` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_banner` [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SELECT * FROM `xy_index_msg` WHERE  `id` = 6 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_goods_cate` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_goods_cate` ORDER BY `id` ASC [ RunTime:0.000000s ]
+---------------------------------------------------------------
+
+[2020-06-15T14:59:45+08:00] 127.0.0.1 GET lxb.com/index/Index/getInfo
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001001s ]
+---------------------------------------------------------------
+
+[2020-06-15T14:59:46+08:00] 127.0.0.1 GET lxb.com/index/Index/getTongji
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_users` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `xy_users` WHERE  `status` = 1  AND `addtime` BETWEEN 1592064000 AND 1592204385 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_goods_list` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `xy_goods_list` [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_convey` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT SUM(`num`) AS tp_sum FROM `xy_convey` WHERE  `status` = 1  AND `endtime` BETWEEN 1592150400 AND 1592204386 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `xy_convey` WHERE  `status` = 1  AND `addtime` BETWEEN 1592150400 AND 1592204386 [ RunTime:0.001001s ]
+---------------------------------------------------------------
+
+[2020-06-15T14:59:46+08:00] 127.0.0.1 GET lxb.com/index/Index/getDanmu
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:00:05+08:00] 127.0.0.1 GET lxb.com/index/order/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002001s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:00:06+08:00] 127.0.0.1 POST lxb.com/index/order/order_list
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_convey` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT `xc`.*,`xg`.`goods_name`,`xg`.`shop_name`,`xg`.`goods_price`,`xg`.`goods_pic` FROM `xy_convey` `xc` LEFT JOIN `xy_goods_list` `xg` ON `xc`.`goods_id`=`xg`.`id` WHERE  `xc`.`uid` = 19  AND `xc`.`status` = 0 ORDER BY `xc`.`addtime` DESC LIMIT 0,10 [ RunTime:0.031002s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:00:06+08:00] 127.0.0.1 GET lxb.com/index/rot_order/index/1.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_convey` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT SUM(`commission`) AS tp_sum FROM `xy_convey` WHERE  `uid` = 19  AND `addtime` BETWEEN 1592150400 AND 1592204406   AND `status` IN (1,3,5) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_users` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT SUM(`freeze_balance`) AS tp_sum FROM `xy_users` WHERE  `id` = 19 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT SUM(`balance`) AS tp_sum FROM `xy_users` WHERE  `id` = 19 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT SUM(`fudan_balance`) AS tp_sum FROM `xy_users` WHERE  `id` = 19 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `xy_convey` WHERE  `uid` = 19  AND `addtime` BETWEEN 1592150400 AND 1592204406   AND `is_fudan` = 0  AND `status` IN (0,1,3,5) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(`num`) AS tp_count FROM `xy_convey` WHERE  `uid` = 19  AND `addtime` BETWEEN 1592150400 AND 1592204406   AND `status` = 5 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(`num`) AS tp_count FROM `xy_convey` WHERE  `uid` = 19  AND `addtime` BETWEEN 1592150400 AND 1592204406   AND `is_fudan` = 1  AND `status` IN (0,1,3,5) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(`num`) AS tp_count FROM `xy_convey` WHERE  `uid` = 19  AND `addtime` BETWEEN 1592150400 AND 1592204406   AND `status` = 0 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(`num`) AS tp_count FROM `xy_convey` WHERE  `uid` = 19  AND `addtime` BETWEEN 1592150400 AND 1592204406   AND `status` IN (1,3) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_reward_log` [ RunTime:0.002001s ]
+[ sql ] [ SQL ] SELECT SUM(`num`) AS tp_sum FROM `xy_reward_log` WHERE  `uid` = 19  AND `addtime` BETWEEN 1592150400 AND 1592204406   AND `status` = 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `deal_count` FROM `xy_users` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_index_msg` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `content` FROM `xy_index_msg` WHERE  `id` = 9  AND `status` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_users` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_level` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_level` WHERE  `level` = 0 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_goods_cate` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_goods_cate` [ RunTime:0.001000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:00:07+08:00] 127.0.0.1 GET lxb.com/index/Index/getInfo
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006001s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:00:07+08:00] 127.0.0.1 GET lxb.com/index/Index/getTongji
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004001s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_users` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `xy_users` WHERE  `status` = 1  AND `addtime` BETWEEN 1592064000 AND 1592204407 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_goods_list` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `xy_goods_list` [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_convey` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT SUM(`num`) AS tp_sum FROM `xy_convey` WHERE  `status` = 1  AND `endtime` BETWEEN 1592150400 AND 1592204407 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `xy_convey` WHERE  `status` = 1  AND `addtime` BETWEEN 1592150400 AND 1592204407 [ RunTime:0.002000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:00:13+08:00] 127.0.0.1 GET lxb.com/index/support/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_cs` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_cs` WHERE  `status` = 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_index_msg` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_index_msg` WHERE  `status` = 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:00:16+08:00] 127.0.0.1 GET lxb.com/index/support/detail/1.html?id=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_index_msg` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_index_msg` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:00:18+08:00] 127.0.0.1 GET lxb.com/index/support/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_cs` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_cs` WHERE  `status` = 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_index_msg` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_index_msg` WHERE  `status` = 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:00:19+08:00] 127.0.0.1 GET lxb.com/index/my/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_users` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `username`,`tel`,`level`,`id`,`headpic`,`balance`,`freeze_balance`,`lixibao_balance`,`invite_code`,`show_td` FROM `xy_users` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_convey` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT SUM(`commission`) AS tp_sum FROM `xy_convey` WHERE  `status` IN (1,3)  AND `uid` = 19 [ RunTime:0.001001s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_level` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `name` FROM `xy_level` WHERE  `level` = 0 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_lixibao` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT SUM(`num`) AS tp_sum FROM `xy_lixibao` WHERE  `status` = 1  AND `uid` = 19 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:00:22+08:00] 127.0.0.1 GET lxb.com/index/my/invite.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:00:45+08:00] 127.0.0.1 GET lxb.com/index/my/invite.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:00:51+08:00] 127.0.0.1 GET lxb.com/index/my/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_users` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT `username`,`tel`,`level`,`id`,`headpic`,`balance`,`freeze_balance`,`lixibao_balance`,`invite_code`,`show_td` FROM `xy_users` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_convey` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT SUM(`commission`) AS tp_sum FROM `xy_convey` WHERE  `status` IN (1,3)  AND `uid` = 19 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_level` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `name` FROM `xy_level` WHERE  `level` = 0 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_lixibao` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT SUM(`num`) AS tp_sum FROM `xy_lixibao` WHERE  `status` = 1  AND `uid` = 19 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:00:53+08:00] 127.0.0.1 GET lxb.com/index/my/invite.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:29:15+08:00] 127.0.0.1 GET lxb.com/index/my/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.019001s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_users` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT `username`,`tel`,`level`,`id`,`headpic`,`balance`,`freeze_balance`,`lixibao_balance`,`invite_code`,`show_td` FROM `xy_users` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_convey` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT SUM(`commission`) AS tp_sum FROM `xy_convey` WHERE  `status` IN (1,3)  AND `uid` = 19 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_level` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT `name` FROM `xy_level` WHERE  `level` = 0 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_lixibao` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT SUM(`num`) AS tp_sum FROM `xy_lixibao` WHERE  `status` = 1  AND `uid` = 19 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:29:24+08:00] 127.0.0.1 GET lxb.com/index/my/invite.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:30:15+08:00] 127.0.0.1 GET lxb.com/index/my/invite.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:30:17+08:00] 127.0.0.1 GET lxb.com/index/my/invite.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:30:18+08:00] 127.0.0.1 GET lxb.com/index/my/invite.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:30:48+08:00] 127.0.0.1 GET lxb.com/index/my/invite.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.022001s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.067004s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:30:53+08:00] 127.0.0.1 GET lxb.com/index/my/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_users` [ RunTime:0.067004s ]
+[ sql ] [ SQL ] SELECT `username`,`tel`,`level`,`id`,`headpic`,`balance`,`freeze_balance`,`lixibao_balance`,`invite_code`,`show_td` FROM `xy_users` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_convey` [ RunTime:0.034002s ]
+[ sql ] [ SQL ] SELECT SUM(`commission`) AS tp_sum FROM `xy_convey` WHERE  `status` IN (1,3)  AND `uid` = 19 [ RunTime:0.032002s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_level` [ RunTime:0.033002s ]
+[ sql ] [ SQL ] SELECT `name` FROM `xy_level` WHERE  `level` = 0 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_lixibao` [ RunTime:0.032002s ]
+[ sql ] [ SQL ] SELECT SUM(`num`) AS tp_sum FROM `xy_lixibao` WHERE  `status` = 1  AND `uid` = 19 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:30:56+08:00] 127.0.0.1 GET lxb.com/index/index/home.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_index_msg` [ RunTime:0.035002s ]
+[ sql ] [ SQL ] SELECT `content` FROM `xy_index_msg` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_users` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_users` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_banner` [ RunTime:0.019001s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_banner` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SELECT * FROM `xy_index_msg` WHERE  `id` = 6 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_goods_cate` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_goods_cate` ORDER BY `id` ASC [ RunTime:0.000000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:30:56+08:00] 127.0.0.1 GET lxb.com/index/Index/getInfo
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:30:56+08:00] 127.0.0.1 GET lxb.com/index/Index/getTongji
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_users` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `xy_users` WHERE  `status` = 1  AND `addtime` BETWEEN 1592064000 AND 1592206256 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_goods_list` [ RunTime:0.021002s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `xy_goods_list` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_convey` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT SUM(`num`) AS tp_sum FROM `xy_convey` WHERE  `status` = 1  AND `endtime` BETWEEN 1592150400 AND 1592206256 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `xy_convey` WHERE  `status` = 1  AND `addtime` BETWEEN 1592150400 AND 1592206256 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:30:56+08:00] 127.0.0.1 GET lxb.com/index/Index/getDanmu
+[ sql ] [ DB ] CONNECT:[ UseTime:0.042003s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:30:58+08:00] 127.0.0.1 GET lxb.com/index/ctrl/set.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003001s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:31:00+08:00] 127.0.0.1 GET lxb.com/index/index/home.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_index_msg` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `content` FROM `xy_index_msg` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_users` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_users` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_banner` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_banner` [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SELECT * FROM `xy_index_msg` WHERE  `id` = 6 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_goods_cate` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_goods_cate` ORDER BY `id` ASC [ RunTime:0.000000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:31:01+08:00] 127.0.0.1 GET lxb.com/index/Index/getInfo
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014001s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:31:01+08:00] 127.0.0.1 GET lxb.com/index/Index/getTongji
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014001s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_users` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `xy_users` WHERE  `status` = 1  AND `addtime` BETWEEN 1592064000 AND 1592206261 [ RunTime:0.004001s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_goods_list` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `xy_goods_list` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.022002s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_convey` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT SUM(`num`) AS tp_sum FROM `xy_convey` WHERE  `status` = 1  AND `endtime` BETWEEN 1592150400 AND 1592206261 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `xy_convey` WHERE  `status` = 1  AND `addtime` BETWEEN 1592150400 AND 1592206261 [ RunTime:0.002000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:31:01+08:00] 127.0.0.1 GET lxb.com/index/Index/getDanmu
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:31:02+08:00] 127.0.0.1 GET lxb.com/index/support/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002001s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_cs` [ RunTime:0.028001s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_cs` WHERE  `status` = 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_index_msg` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_index_msg` WHERE  `status` = 1 [ RunTime:0.001001s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:31:04+08:00] 127.0.0.1 GET lxb.com/index/index/home.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_index_msg` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `content` FROM `xy_index_msg` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_users` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_users` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_banner` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_banner` [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SELECT * FROM `xy_index_msg` WHERE  `id` = 6 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_goods_cate` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_goods_cate` ORDER BY `id` ASC [ RunTime:0.000000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:31:05+08:00] 127.0.0.1 GET lxb.com/index/Index/getInfo
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:31:05+08:00] 127.0.0.1 GET lxb.com/index/Index/getTongji
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.003001s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_users` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `xy_users` WHERE  `status` = 1  AND `addtime` BETWEEN 1592064000 AND 1592206265 [ RunTime:0.003001s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_goods_list` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `xy_goods_list` [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.017001s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_convey` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT SUM(`num`) AS tp_sum FROM `xy_convey` WHERE  `status` = 1  AND `endtime` BETWEEN 1592150400 AND 1592206265 [ RunTime:0.002000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `xy_convey` WHERE  `status` = 1  AND `addtime` BETWEEN 1592150400 AND 1592206265 [ RunTime:0.002001s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:31:05+08:00] 127.0.0.1 GET lxb.com/index/Index/getDanmu
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:31:06+08:00] 127.0.0.1 GET lxb.com/index/my/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_users` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT `username`,`tel`,`level`,`id`,`headpic`,`balance`,`freeze_balance`,`lixibao_balance`,`invite_code`,`show_td` FROM `xy_users` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.003000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_convey` [ RunTime:0.002001s ]
+[ sql ] [ SQL ] SELECT SUM(`commission`) AS tp_sum FROM `xy_convey` WHERE  `status` IN (1,3)  AND `uid` = 19 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_level` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `name` FROM `xy_level` WHERE  `level` = 0 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_lixibao` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT SUM(`num`) AS tp_sum FROM `xy_lixibao` WHERE  `status` = 1  AND `uid` = 19 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:31:10+08:00] 127.0.0.1 GET lxb.com/index/my/invite.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:33:01+08:00] 127.0.0.1 GET lxb.com/index/my/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_users` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `username`,`tel`,`level`,`id`,`headpic`,`balance`,`freeze_balance`,`lixibao_balance`,`invite_code`,`show_td` FROM `xy_users` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_convey` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT SUM(`commission`) AS tp_sum FROM `xy_convey` WHERE  `status` IN (1,3)  AND `uid` = 19 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_level` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT `name` FROM `xy_level` WHERE  `level` = 0 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_lixibao` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT SUM(`num`) AS tp_sum FROM `xy_lixibao` WHERE  `status` = 1  AND `uid` = 19 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:33:03+08:00] 127.0.0.1 GET lxb.com/index/index/home.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_index_msg` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT `content` FROM `xy_index_msg` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_users` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_users` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_banner` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_banner` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SELECT * FROM `xy_index_msg` WHERE  `id` = 6 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_goods_cate` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_goods_cate` ORDER BY `id` ASC [ RunTime:0.000000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:33:04+08:00] 127.0.0.1 GET lxb.com/index/Index/getTongji
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001001s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_users` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `xy_users` WHERE  `status` = 1  AND `addtime` BETWEEN 1592064000 AND 1592206384 [ RunTime:0.002000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_goods_list` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `xy_goods_list` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.008000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_convey` [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SELECT SUM(`num`) AS tp_sum FROM `xy_convey` WHERE  `status` = 1  AND `endtime` BETWEEN 1592150400 AND 1592206384 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `xy_convey` WHERE  `status` = 1  AND `addtime` BETWEEN 1592150400 AND 1592206384 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:33:04+08:00] 127.0.0.1 GET lxb.com/index/Index/getInfo
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:33:04+08:00] 127.0.0.1 GET lxb.com/index/Index/getDanmu
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004001s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:36:53+08:00] 127.0.0.1 GET lxb.com/index/rot_order/index/1.html?type=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_convey` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT SUM(`commission`) AS tp_sum FROM `xy_convey` WHERE  `uid` = 19  AND `addtime` BETWEEN 1592150400 AND 1592206613   AND `status` IN (1,3,5) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_users` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT SUM(`freeze_balance`) AS tp_sum FROM `xy_users` WHERE  `id` = 19 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT SUM(`balance`) AS tp_sum FROM `xy_users` WHERE  `id` = 19 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT SUM(`fudan_balance`) AS tp_sum FROM `xy_users` WHERE  `id` = 19 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `xy_convey` WHERE  `uid` = 19  AND `addtime` BETWEEN 1592150400 AND 1592206613   AND `is_fudan` = 0  AND `status` IN (0,1,3,5) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(`num`) AS tp_count FROM `xy_convey` WHERE  `uid` = 19  AND `addtime` BETWEEN 1592150400 AND 1592206613   AND `status` = 5 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(`num`) AS tp_count FROM `xy_convey` WHERE  `uid` = 19  AND `addtime` BETWEEN 1592150400 AND 1592206613   AND `is_fudan` = 1  AND `status` IN (0,1,3,5) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(`num`) AS tp_count FROM `xy_convey` WHERE  `uid` = 19  AND `addtime` BETWEEN 1592150400 AND 1592206613   AND `status` = 0 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(`num`) AS tp_count FROM `xy_convey` WHERE  `uid` = 19  AND `addtime` BETWEEN 1592150400 AND 1592206613   AND `status` IN (1,3) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_reward_log` [ RunTime:0.025002s ]
+[ sql ] [ SQL ] SELECT SUM(`num`) AS tp_sum FROM `xy_reward_log` WHERE  `uid` = 19  AND `addtime` BETWEEN 1592150400 AND 1592206613   AND `status` = 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `deal_count` FROM `xy_users` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_index_msg` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `content` FROM `xy_index_msg` WHERE  `id` = 9  AND `status` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_users` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_level` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_level` WHERE  `level` = 0 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_goods_cate` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_goods_cate` [ RunTime:0.001000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:36:53+08:00] 127.0.0.1 GET lxb.com/index/Index/getInfo
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014001s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:36:54+08:00] 127.0.0.1 GET lxb.com/index/Index/getTongji
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002001s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_users` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `xy_users` WHERE  `status` = 1  AND `addtime` BETWEEN 1592064000 AND 1592206614 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_goods_list` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `xy_goods_list` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_convey` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT SUM(`num`) AS tp_sum FROM `xy_convey` WHERE  `status` = 1  AND `endtime` BETWEEN 1592150400 AND 1592206614 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `xy_convey` WHERE  `status` = 1  AND `addtime` BETWEEN 1592150400 AND 1592206614 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:36:54+08:00] 127.0.0.1 GET lxb.com/index/my/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_users` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT `username`,`tel`,`level`,`id`,`headpic`,`balance`,`freeze_balance`,`lixibao_balance`,`invite_code`,`show_td` FROM `xy_users` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002001s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_convey` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT SUM(`commission`) AS tp_sum FROM `xy_convey` WHERE  `status` IN (1,3)  AND `uid` = 19 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_level` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT `name` FROM `xy_level` WHERE  `level` = 0 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_lixibao` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT SUM(`num`) AS tp_sum FROM `xy_lixibao` WHERE  `status` = 1  AND `uid` = 19 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:36:56+08:00] 127.0.0.1 GET lxb.com/index/ctrl/set.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:36:58+08:00] 127.0.0.1 GET lxb.com/index/my/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_users` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `username`,`tel`,`level`,`id`,`headpic`,`balance`,`freeze_balance`,`lixibao_balance`,`invite_code`,`show_td` FROM `xy_users` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003001s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_convey` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT SUM(`commission`) AS tp_sum FROM `xy_convey` WHERE  `status` IN (1,3)  AND `uid` = 19 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_level` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `name` FROM `xy_level` WHERE  `level` = 0 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_lixibao` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT SUM(`num`) AS tp_sum FROM `xy_lixibao` WHERE  `status` = 1  AND `uid` = 19 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:41:25+08:00] 127.0.0.1 POST lxb.com/index/user/do_login.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_users` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xy_users` WHERE  `tel` = '17010153055' [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT `id`,`pwd`,`salt`,`pwd_error_num`,`allow_login_time`,`status`,`login_status`,`headpic` FROM `xy_users` WHERE  `tel` = '17010153055' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] UPDATE `xy_users`  SET `pwd_error_num` = 0 , `allow_login_time` = 0 , `login_status` = 1 , `ip` = '127.0.0.1'  WHERE  `id` = 19 [ RunTime:0.048003s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:41:27+08:00] 127.0.0.1 GET lxb.com/index/index/home.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_index_msg` [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SELECT `content` FROM `xy_index_msg` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_users` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_users` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_banner` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_banner` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SELECT * FROM `xy_index_msg` WHERE  `id` = 6 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_goods_cate` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_goods_cate` ORDER BY `id` ASC [ RunTime:0.000000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:41:27+08:00] 127.0.0.1 GET lxb.com/index/Index/getDanmu
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:41:28+08:00] 127.0.0.1 GET lxb.com/index/Index/getTongji
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_users` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `xy_users` WHERE  `status` = 1  AND `addtime` BETWEEN 1592064000 AND 1592206887 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_goods_list` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `xy_goods_list` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_convey` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT SUM(`num`) AS tp_sum FROM `xy_convey` WHERE  `status` = 1  AND `endtime` BETWEEN 1592150400 AND 1592206887 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002001s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `xy_convey` WHERE  `status` = 1  AND `addtime` BETWEEN 1592150400 AND 1592206887 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:41:28+08:00] 127.0.0.1 GET lxb.com/index/Index/getInfo
+[ sql ] [ DB ] CONNECT:[ UseTime:0.065004s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:41:43+08:00] 127.0.0.1 GET lxb.com/index/my/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_users` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT `username`,`tel`,`level`,`id`,`headpic`,`balance`,`freeze_balance`,`lixibao_balance`,`invite_code`,`show_td` FROM `xy_users` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_convey` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT SUM(`commission`) AS tp_sum FROM `xy_convey` WHERE  `status` IN (1,3)  AND `uid` = 19 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002001s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_level` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `name` FROM `xy_level` WHERE  `level` = 0 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_lixibao` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT SUM(`num`) AS tp_sum FROM `xy_lixibao` WHERE  `status` = 1  AND `uid` = 19 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:44:21+08:00] 127.0.0.1 POST lxb.com/index/user/do_login.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004001s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_users` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xy_users` WHERE  `tel` = '17010153055' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `id`,`pwd`,`salt`,`pwd_error_num`,`allow_login_time`,`status`,`login_status`,`headpic` FROM `xy_users` WHERE  `tel` = '17010153055' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] UPDATE `xy_users`  SET `pwd_error_num` = 0 , `allow_login_time` = 0 , `login_status` = 1 , `ip` = '127.0.0.1'  WHERE  `id` = 19 [ RunTime:0.119007s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:44:23+08:00] 127.0.0.1 GET lxb.com/index/index/home.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_index_msg` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `content` FROM `xy_index_msg` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_users` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_users` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_banner` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_banner` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SELECT * FROM `xy_index_msg` WHERE  `id` = 6 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_goods_cate` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_goods_cate` ORDER BY `id` ASC [ RunTime:0.000000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:44:24+08:00] 127.0.0.1 GET lxb.com/index/Index/getTongji
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.017001s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_users` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `xy_users` WHERE  `status` = 1  AND `addtime` BETWEEN 1592064000 AND 1592207064 [ RunTime:0.001001s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_goods_list` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `xy_goods_list` [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.034002s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_convey` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT SUM(`num`) AS tp_sum FROM `xy_convey` WHERE  `status` = 1  AND `endtime` BETWEEN 1592150400 AND 1592207064 [ RunTime:0.001001s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `xy_convey` WHERE  `status` = 1  AND `addtime` BETWEEN 1592150400 AND 1592207064 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:44:24+08:00] 127.0.0.1 GET lxb.com/index/Index/getInfo
+[ sql ] [ DB ] CONNECT:[ UseTime:0.017001s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:44:24+08:00] 127.0.0.1 GET lxb.com/index/Index/getDanmu
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:44:27+08:00] 127.0.0.1 GET lxb.com/index/my/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_users` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT `username`,`tel`,`level`,`id`,`headpic`,`balance`,`freeze_balance`,`lixibao_balance`,`invite_code`,`show_td` FROM `xy_users` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_convey` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT SUM(`commission`) AS tp_sum FROM `xy_convey` WHERE  `status` IN (1,3)  AND `uid` = 19 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_level` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `name` FROM `xy_level` WHERE  `level` = 0 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_lixibao` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT SUM(`num`) AS tp_sum FROM `xy_lixibao` WHERE  `status` = 1  AND `uid` = 19 [ RunTime:0.001001s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:44:38+08:00] 127.0.0.1 GET lxb.com/index/ctrl/set.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:44:40+08:00] 127.0.0.1 GET lxb.com/index/ctrl/edit_pwd.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:45:48+08:00] 127.0.0.1 GET lxb.com/index/ctrl/set.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:45:50+08:00] 127.0.0.1 GET lxb.com/index/ctrl/edit_pwd.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:45:51+08:00] 127.0.0.1 GET lxb.com/index/ctrl/set.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:45:52+08:00] 127.0.0.1 GET lxb.com/index/ctrl/edit_deposit_pwd.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:46:25+08:00] 127.0.0.1 GET lxb.com/index/ctrl/set.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:46:26+08:00] 127.0.0.1 GET lxb.com/index/my/bind_tel.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:46:58+08:00] 127.0.0.1 GET lxb.com/index/ctrl/set.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:47:01+08:00] 127.0.0.1 GET lxb.com/index/my/bind_tel.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:47:03+08:00] 127.0.0.1 GET lxb.com/index/ctrl/set.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:47:04+08:00] 127.0.0.1 GET lxb.com/index/my/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_users` [ RunTime:0.002001s ]
+[ sql ] [ SQL ] SELECT `username`,`tel`,`level`,`id`,`headpic`,`balance`,`freeze_balance`,`lixibao_balance`,`invite_code`,`show_td` FROM `xy_users` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_convey` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT SUM(`commission`) AS tp_sum FROM `xy_convey` WHERE  `status` IN (1,3)  AND `uid` = 19 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_level` [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `xy_level` WHERE  `level` = 0 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_lixibao` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT SUM(`num`) AS tp_sum FROM `xy_lixibao` WHERE  `status` = 1  AND `uid` = 19 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:47:08+08:00] 127.0.0.1 GET lxb.com/index/ctrl/set.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002001s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:47:10+08:00] 127.0.0.1 GET lxb.com/index/my/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_users` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `username`,`tel`,`level`,`id`,`headpic`,`balance`,`freeze_balance`,`lixibao_balance`,`invite_code`,`show_td` FROM `xy_users` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_convey` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT SUM(`commission`) AS tp_sum FROM `xy_convey` WHERE  `status` IN (1,3)  AND `uid` = 19 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_level` [ RunTime:0.002001s ]
+[ sql ] [ SQL ] SELECT `name` FROM `xy_level` WHERE  `level` = 0 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_lixibao` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT SUM(`num`) AS tp_sum FROM `xy_lixibao` WHERE  `status` = 1  AND `uid` = 19 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:47:11+08:00] 127.0.0.1 GET lxb.com/index/ctrl/junior.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:47:11+08:00] 127.0.0.1 GET lxb.com/index/ctrl/bot_user
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_users` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `id`,`username`,`headpic`,`addtime`,`childs`,`tel` FROM `xy_users` WHERE  `parent_id` = 19 ORDER BY `addtime` DESC LIMIT 0,10 [ RunTime:0.057004s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:47:15+08:00] 127.0.0.1 GET lxb.com/index/my/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002001s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_users` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `username`,`tel`,`level`,`id`,`headpic`,`balance`,`freeze_balance`,`lixibao_balance`,`invite_code`,`show_td` FROM `xy_users` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_convey` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT SUM(`commission`) AS tp_sum FROM `xy_convey` WHERE  `status` IN (1,3)  AND `uid` = 19 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_level` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `name` FROM `xy_level` WHERE  `level` = 0 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_lixibao` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT SUM(`num`) AS tp_sum FROM `xy_lixibao` WHERE  `status` = 1  AND `uid` = 19 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:47:18+08:00] 127.0.0.1 GET lxb.com/index/ctrl/bank.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001001s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_users` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `balance` FROM `xy_users` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_convey` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT SUM(`commission`) AS tp_sum FROM `xy_convey` WHERE  `uid` = 19  AND `status` = 2 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:47:18+08:00] 127.0.0.1 GET lxb.com/index/ctrl/do_bankinfo
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_bankinfo` [ RunTime:0.038002s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_bankinfo` WHERE  `uid` = 19 [ RunTime:0.008001s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:47:21+08:00] 127.0.0.1 GET lxb.com/index/my/add_bank.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:47:54+08:00] 127.0.0.1 GET lxb.com/index/ctrl/bank.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_users` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `balance` FROM `xy_users` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_convey` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT SUM(`commission`) AS tp_sum FROM `xy_convey` WHERE  `uid` = 19  AND `status` = 2 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:47:54+08:00] 127.0.0.1 GET lxb.com/index/ctrl/do_bankinfo
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_bankinfo` [ RunTime:0.003001s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_bankinfo` WHERE  `uid` = 19 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:47:56+08:00] 127.0.0.1 GET lxb.com/index/my/add_bank.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:47:58+08:00] 127.0.0.1 GET lxb.com/index/ctrl/bank.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_users` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT `balance` FROM `xy_users` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_convey` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT SUM(`commission`) AS tp_sum FROM `xy_convey` WHERE  `uid` = 19  AND `status` = 2 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:47:58+08:00] 127.0.0.1 GET lxb.com/index/ctrl/do_bankinfo
+[ sql ] [ DB ] CONNECT:[ UseTime:0.018001s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.023002s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_bankinfo` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_bankinfo` WHERE  `uid` = 19 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:47:59+08:00] 127.0.0.1 GET lxb.com/index/my/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_users` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT `username`,`tel`,`level`,`id`,`headpic`,`balance`,`freeze_balance`,`lixibao_balance`,`invite_code`,`show_td` FROM `xy_users` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_convey` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT SUM(`commission`) AS tp_sum FROM `xy_convey` WHERE  `status` IN (1,3)  AND `uid` = 19 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_level` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `name` FROM `xy_level` WHERE  `level` = 0 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_lixibao` [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SELECT SUM(`num`) AS tp_sum FROM `xy_lixibao` WHERE  `status` = 1  AND `uid` = 19 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:48:01+08:00] 127.0.0.1 GET lxb.com/index/ctrl/receive_site.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:48:01+08:00] 127.0.0.1 POST lxb.com/index/my/get_address
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_member_address` [ RunTime:0.032002s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_member_address` WHERE  `uid` = 19 [ RunTime:0.002000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:48:03+08:00] 127.0.0.1 GET lxb.com/index/ctrl/add_site.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:48:32+08:00] 127.0.0.1 GET lxb.com/index/ctrl/add_site.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002001s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:48:33+08:00] 127.0.0.1 GET lxb.com/index/ctrl/receive_site.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:48:34+08:00] 127.0.0.1 POST lxb.com/index/my/get_address
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_member_address` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_member_address` WHERE  `uid` = 19 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:48:35+08:00] 127.0.0.1 GET lxb.com/index/my/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_users` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT `username`,`tel`,`level`,`id`,`headpic`,`balance`,`freeze_balance`,`lixibao_balance`,`invite_code`,`show_td` FROM `xy_users` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_convey` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT SUM(`commission`) AS tp_sum FROM `xy_convey` WHERE  `status` IN (1,3)  AND `uid` = 19 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_level` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT `name` FROM `xy_level` WHERE  `level` = 0 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002001s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_lixibao` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT SUM(`num`) AS tp_sum FROM `xy_lixibao` WHERE  `status` = 1  AND `uid` = 19 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:48:37+08:00] 127.0.0.1 GET lxb.com/index/ctrl/team_bgk.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:48:37+08:00] 127.0.0.1 POST lxb.com/index/my/get_team_reward
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_reward_log` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT SUM(`num`) AS tp_sum FROM `xy_reward_log` WHERE  `uid` = 19  AND `addtime` BETWEEN 1592150400 AND 1592207317   AND `lv` = 1  AND `status` = 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:48:39+08:00] 127.0.0.1 GET lxb.com/index/my/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001001s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_users` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `username`,`tel`,`level`,`id`,`headpic`,`balance`,`freeze_balance`,`lixibao_balance`,`invite_code`,`show_td` FROM `xy_users` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_convey` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT SUM(`commission`) AS tp_sum FROM `xy_convey` WHERE  `status` IN (1,3)  AND `uid` = 19 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_level` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `name` FROM `xy_level` WHERE  `level` = 0 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_lixibao` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT SUM(`num`) AS tp_sum FROM `xy_lixibao` WHERE  `status` = 1  AND `uid` = 19 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:48:41+08:00] 127.0.0.1 GET lxb.com/index/ctrl/deposit_admin.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:48:41+08:00] 127.0.0.1 POST lxb.com/index/ctrl/get_deposit
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_deposit` [ RunTime:0.019001s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_deposit` WHERE  `uid` = 19 [ RunTime:0.018001s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:48:42+08:00] 127.0.0.1 GET lxb.com/index/ctrl/deposit_before.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:48:44+08:00] 127.0.0.1 GET lxb.com/index/ctrl/deposit_wx.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_users` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_users` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_level` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_level` WHERE  `level` = 0 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:48:47+08:00] 127.0.0.1 GET lxb.com/index/ctrl/deposit_before.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:48:48+08:00] 127.0.0.1 GET lxb.com/index/ctrl/deposit_zfb.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_users` [ RunTime:0.002001s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_users` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_level` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_level` WHERE  `level` = 0 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:49:39+08:00] 127.0.0.1 GET lxb.com/index/ctrl/deposit_before.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:49:41+08:00] 127.0.0.1 GET lxb.com/index/ctrl/deposit.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_users` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_users` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_level` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_level` WHERE  `level` = 0 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:49:42+08:00] 127.0.0.1 GET lxb.com/index/ctrl/do_deposit
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_users` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_users` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_level` [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_level` WHERE  `level` = 0 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_bankinfo` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_bankinfo` WHERE  `uid` = 19  AND `status` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:49:43+08:00] 127.0.0.1 GET lxb.com/index/ctrl/deposit_before.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:49:49+08:00] 127.0.0.1 GET lxb.com/index/ctrl/deposit.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_users` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_users` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_level` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_level` WHERE  `level` = 0 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:49:49+08:00] 127.0.0.1 GET lxb.com/index/ctrl/do_deposit
+[ sql ] [ DB ] CONNECT:[ UseTime:0.017001s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_users` [ RunTime:0.002001s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_users` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_level` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_level` WHERE  `level` = 0 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_bankinfo` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_bankinfo` WHERE  `uid` = 19  AND `status` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:50:27+08:00] 127.0.0.1 GET lxb.com/index/ctrl/deposit.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005001s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_users` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_users` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_level` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_level` WHERE  `level` = 0 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:50:27+08:00] 127.0.0.1 GET lxb.com/index/ctrl/do_deposit
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.003000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_users` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_users` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_level` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_level` WHERE  `level` = 0 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_bankinfo` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_bankinfo` WHERE  `uid` = 19  AND `status` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:50:29+08:00] 127.0.0.1 GET lxb.com/index/ctrl/deposit_before.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001001s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:50:31+08:00] 127.0.0.1 GET lxb.com/index/ctrl/deposit_admin.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:50:31+08:00] 127.0.0.1 POST lxb.com/index/ctrl/get_deposit
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001001s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_deposit` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_deposit` WHERE  `uid` = 19 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:50:33+08:00] 127.0.0.1 GET lxb.com/index/my/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_users` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `username`,`tel`,`level`,`id`,`headpic`,`balance`,`freeze_balance`,`lixibao_balance`,`invite_code`,`show_td` FROM `xy_users` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_convey` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT SUM(`commission`) AS tp_sum FROM `xy_convey` WHERE  `status` IN (1,3)  AND `uid` = 19 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_level` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `name` FROM `xy_level` WHERE  `level` = 0 LIMIT 1 [ RunTime:0.001001s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_lixibao` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT SUM(`num`) AS tp_sum FROM `xy_lixibao` WHERE  `status` = 1  AND `uid` = 19 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:50:34+08:00] 127.0.0.1 GET lxb.com/index/ctrl/wallet.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_users` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT `balance` FROM `xy_users` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_convey` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT SUM(`commission`) AS tp_sum FROM `xy_convey` WHERE  `uid` = 19  AND `status` = 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SELECT * FROM `xy_convey` WHERE  `uid` = 19  AND `addtime` > 1592150400  AND `status` = 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002001s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_recharge` [ RunTime:0.020001s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_recharge` WHERE  `uid` = 19  AND `addtime` > 1592150400  AND `status` = 2 [ RunTime:0.005000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_deposit` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_deposit` WHERE  `uid` = 19  AND `addtime` > 1592150400  AND `status` = 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:51:30+08:00] 127.0.0.1 GET lxb.com/index/ctrl/wallet.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_users` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `balance` FROM `xy_users` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_convey` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT SUM(`commission`) AS tp_sum FROM `xy_convey` WHERE  `uid` = 19  AND `status` = 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SELECT * FROM `xy_convey` WHERE  `uid` = 19  AND `addtime` > 1592150400  AND `status` = 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_recharge` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_recharge` WHERE  `uid` = 19  AND `addtime` > 1592150400  AND `status` = 2 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_deposit` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_deposit` WHERE  `uid` = 19  AND `addtime` > 1592150400  AND `status` = 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:51:34+08:00] 127.0.0.1 GET lxb.com/index/ctrl/wallet.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_users` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `balance` FROM `xy_users` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_convey` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT SUM(`commission`) AS tp_sum FROM `xy_convey` WHERE  `uid` = 19  AND `status` = 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SELECT * FROM `xy_convey` WHERE  `uid` = 19  AND `addtime` > 1592150400  AND `status` = 1 [ RunTime:0.001001s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_recharge` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_recharge` WHERE  `uid` = 19  AND `addtime` > 1592150400  AND `status` = 2 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_deposit` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_deposit` WHERE  `uid` = 19  AND `addtime` > 1592150400  AND `status` = 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:51:42+08:00] 127.0.0.1 GET lxb.com/index/my/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001001s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_users` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `username`,`tel`,`level`,`id`,`headpic`,`balance`,`freeze_balance`,`lixibao_balance`,`invite_code`,`show_td` FROM `xy_users` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_convey` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT SUM(`commission`) AS tp_sum FROM `xy_convey` WHERE  `status` IN (1,3)  AND `uid` = 19 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_level` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `name` FROM `xy_level` WHERE  `level` = 0 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_lixibao` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT SUM(`num`) AS tp_sum FROM `xy_lixibao` WHERE  `status` = 1  AND `uid` = 19 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:51:43+08:00] 127.0.0.1 GET lxb.com/index/ctrl/my_data.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:51:44+08:00] 127.0.0.1 GET lxb.com/index/my/do_my_info
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.002001s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_users` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `username`,`headpic`,`nickname`,signiture sign,`wx_ewm`,`zfb_ewm` FROM `xy_users` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:52:13+08:00] 127.0.0.1 GET lxb.com/index/ctrl/my_data.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001001s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:52:13+08:00] 127.0.0.1 GET lxb.com/index/my/do_my_info
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002001s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_users` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT `username`,`headpic`,`nickname`,signiture sign,`wx_ewm`,`zfb_ewm` FROM `xy_users` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:52:15+08:00] 127.0.0.1 GET lxb.com/index/my/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_users` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `username`,`tel`,`level`,`id`,`headpic`,`balance`,`freeze_balance`,`lixibao_balance`,`invite_code`,`show_td` FROM `xy_users` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_convey` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT SUM(`commission`) AS tp_sum FROM `xy_convey` WHERE  `status` IN (1,3)  AND `uid` = 19 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_level` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `name` FROM `xy_level` WHERE  `level` = 0 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001001s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_lixibao` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT SUM(`num`) AS tp_sum FROM `xy_lixibao` WHERE  `status` = 1  AND `uid` = 19 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:52:16+08:00] 127.0.0.1 GET lxb.com/index/ctrl/recharge_admin.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:52:17+08:00] 127.0.0.1 POST lxb.com/index/order/get_recharge_order
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005001s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_recharge` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_recharge` WHERE  `uid` = 19 ORDER BY `addtime` DESC LIMIT 0,13 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:52:19+08:00] 127.0.0.1 GET lxb.com/index/ctrl/recharge_before.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_pay` [ RunTime:0.033002s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_pay` WHERE  `status` = 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:52:22+08:00] 127.0.0.1 GET lxb.com/index/ctrl/recharge2?type=bipay
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_pay` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_pay` WHERE  `status` = 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:52:24+08:00] 127.0.0.1 GET lxb.com/index/ctrl/recharge_before.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_pay` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_pay` WHERE  `status` = 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:52:26+08:00] 127.0.0.1 GET lxb.com/index/ctrl/recharge2?type=paysapi
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_pay` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_pay` WHERE  `status` = 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:52:28+08:00] 127.0.0.1 GET lxb.com/index/ctrl/recharge_before.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_pay` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_pay` WHERE  `status` = 1 [ RunTime:0.001001s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:52:30+08:00] 127.0.0.1 GET lxb.com/index/ctrl/recharge_woaipay
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:53:19+08:00] 127.0.0.1 GET lxb.com/index/ctrl/recharge_woaipay
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:53:44+08:00] 127.0.0.1 GET lxb.com/index/ctrl/recharge_woaipay
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002001s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:53:46+08:00] 127.0.0.1 GET lxb.com/index/ctrl/recharge_before.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002001s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_pay` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_pay` WHERE  `status` = 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:53:49+08:00] 127.0.0.1 GET lxb.com/index/ctrl/recharge2?type=paysapi
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002001s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_pay` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_pay` WHERE  `status` = 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:55:28+08:00] 127.0.0.1 GET lxb.com/index/ctrl/recharge_before.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_pay` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_pay` WHERE  `status` = 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:55:30+08:00] 127.0.0.1 GET lxb.com/index/ctrl/recharge2?type=bipay
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001001s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_pay` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_pay` WHERE  `status` = 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:55:32+08:00] 127.0.0.1 GET lxb.com/index/ctrl/recharge_before.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_pay` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_pay` WHERE  `status` = 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:55:34+08:00] 127.0.0.1 GET lxb.com/index/ctrl/recharge
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004001s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:56:03+08:00] 127.0.0.1 GET lxb.com/index/ctrl/recharge
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:56:22+08:00] 127.0.0.1 GET lxb.com/index/ctrl/recharge_before.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001001s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_pay` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_pay` WHERE  `status` = 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:56:52+08:00] 127.0.0.1 GET lxb.com/index/ctrl/recharge
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:56:54+08:00] 127.0.0.1 GET lxb.com/index/ctrl/recharge_before.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_pay` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_pay` WHERE  `status` = 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:56:55+08:00] 127.0.0.1 GET lxb.com/index/ctrl/recharge_woaipay
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:56:58+08:00] 127.0.0.1 GET lxb.com/index/ctrl/recharge_before.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_pay` [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_pay` WHERE  `status` = 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:56:59+08:00] 127.0.0.1 GET lxb.com/index/ctrl/recharge2?type=paysapi
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001001s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_pay` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_pay` WHERE  `status` = 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:57:00+08:00] 127.0.0.1 GET lxb.com/index/ctrl/recharge_before.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_pay` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_pay` WHERE  `status` = 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:57:02+08:00] 127.0.0.1 GET lxb.com/index/ctrl/recharge2?type=wx
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001001s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_pay` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_pay` WHERE  `status` = 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:57:04+08:00] 127.0.0.1 GET lxb.com/index/ctrl/recharge_before.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_pay` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_pay` WHERE  `status` = 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:57:05+08:00] 127.0.0.1 GET lxb.com/index/ctrl/recharge
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:57:08+08:00] 127.0.0.1 GET lxb.com/index/ctrl/recharge_before.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002001s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_pay` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_pay` WHERE  `status` = 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:57:09+08:00] 127.0.0.1 GET lxb.com/index/ctrl/recharge_admin.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:57:09+08:00] 127.0.0.1 POST lxb.com/index/order/get_recharge_order
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_recharge` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_recharge` WHERE  `uid` = 19 ORDER BY `addtime` DESC LIMIT 0,13 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:57:11+08:00] 127.0.0.1 GET lxb.com/index/my/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_users` [ RunTime:0.002001s ]
+[ sql ] [ SQL ] SELECT `username`,`tel`,`level`,`id`,`headpic`,`balance`,`freeze_balance`,`lixibao_balance`,`invite_code`,`show_td` FROM `xy_users` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_convey` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT SUM(`commission`) AS tp_sum FROM `xy_convey` WHERE  `status` IN (1,3)  AND `uid` = 19 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_level` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `name` FROM `xy_level` WHERE  `level` = 0 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_lixibao` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT SUM(`num`) AS tp_sum FROM `xy_lixibao` WHERE  `status` = 1  AND `uid` = 19 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:57:14+08:00] 127.0.0.1 GET lxb.com/index/ctrl/bank.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.068004s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009001s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_users` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT `balance` FROM `xy_users` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.067004s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_convey` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT SUM(`commission`) AS tp_sum FROM `xy_convey` WHERE  `uid` = 19  AND `status` = 2 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:57:14+08:00] 127.0.0.1 GET lxb.com/index/ctrl/do_bankinfo
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014001s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_bankinfo` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_bankinfo` WHERE  `uid` = 19 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:57:16+08:00] 127.0.0.1 GET lxb.com/index/my/add_bank.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:57:18+08:00] 127.0.0.1 GET lxb.com/index/ctrl/bank.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_users` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT `balance` FROM `xy_users` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_convey` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT SUM(`commission`) AS tp_sum FROM `xy_convey` WHERE  `uid` = 19  AND `status` = 2 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:57:18+08:00] 127.0.0.1 GET lxb.com/index/ctrl/do_bankinfo
+[ sql ] [ DB ] CONNECT:[ UseTime:0.022001s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006001s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_bankinfo` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_bankinfo` WHERE  `uid` = 19 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:57:19+08:00] 127.0.0.1 GET lxb.com/index/my/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_users` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `username`,`tel`,`level`,`id`,`headpic`,`balance`,`freeze_balance`,`lixibao_balance`,`invite_code`,`show_td` FROM `xy_users` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_convey` [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SELECT SUM(`commission`) AS tp_sum FROM `xy_convey` WHERE  `status` IN (1,3)  AND `uid` = 19 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_level` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `name` FROM `xy_level` WHERE  `level` = 0 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_lixibao` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT SUM(`num`) AS tp_sum FROM `xy_lixibao` WHERE  `status` = 1  AND `uid` = 19 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:57:21+08:00] 127.0.0.1 GET lxb.com/index/rot_order/index/1.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_convey` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT SUM(`commission`) AS tp_sum FROM `xy_convey` WHERE  `uid` = 19  AND `addtime` BETWEEN 1592150400 AND 1592207841   AND `status` IN (1,3,5) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_users` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT SUM(`freeze_balance`) AS tp_sum FROM `xy_users` WHERE  `id` = 19 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT SUM(`balance`) AS tp_sum FROM `xy_users` WHERE  `id` = 19 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT SUM(`fudan_balance`) AS tp_sum FROM `xy_users` WHERE  `id` = 19 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `xy_convey` WHERE  `uid` = 19  AND `addtime` BETWEEN 1592150400 AND 1592207841   AND `is_fudan` = 0  AND `status` IN (0,1,3,5) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(`num`) AS tp_count FROM `xy_convey` WHERE  `uid` = 19  AND `addtime` BETWEEN 1592150400 AND 1592207841   AND `status` = 5 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(`num`) AS tp_count FROM `xy_convey` WHERE  `uid` = 19  AND `addtime` BETWEEN 1592150400 AND 1592207841   AND `is_fudan` = 1  AND `status` IN (0,1,3,5) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(`num`) AS tp_count FROM `xy_convey` WHERE  `uid` = 19  AND `addtime` BETWEEN 1592150400 AND 1592207841   AND `status` = 0 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(`num`) AS tp_count FROM `xy_convey` WHERE  `uid` = 19  AND `addtime` BETWEEN 1592150400 AND 1592207841   AND `status` IN (1,3) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_reward_log` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT SUM(`num`) AS tp_sum FROM `xy_reward_log` WHERE  `uid` = 19  AND `addtime` BETWEEN 1592150400 AND 1592207841   AND `status` = 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `deal_count` FROM `xy_users` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_index_msg` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `content` FROM `xy_index_msg` WHERE  `id` = 9  AND `status` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_users` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_level` [ RunTime:0.002001s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_level` WHERE  `level` = 0 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_goods_cate` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_goods_cate` [ RunTime:0.000000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:57:22+08:00] 127.0.0.1 GET lxb.com/index/Index/getTongji
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_users` [ RunTime:0.003001s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `xy_users` WHERE  `status` = 1  AND `addtime` BETWEEN 1592064000 AND 1592207842 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_goods_list` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `xy_goods_list` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_convey` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT SUM(`num`) AS tp_sum FROM `xy_convey` WHERE  `status` = 1  AND `endtime` BETWEEN 1592150400 AND 1592207842 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.048003s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `xy_convey` WHERE  `status` = 1  AND `addtime` BETWEEN 1592150400 AND 1592207842 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:57:22+08:00] 127.0.0.1 GET lxb.com/index/Index/getInfo
+[ sql ] [ DB ] CONNECT:[ UseTime:0.020002s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:57:28+08:00] 127.0.0.1 POST lxb.com/index/rot_order/submit_order.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_users` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `deal_status`,`status`,`balance`,`level`,`deal_count`,`deal_time`,deal_reward_count dc,`fudan_deal_count` FROM `xy_users` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] UPDATE `xy_users`  SET `deal_time` = 1592150400 , `deal_count` = 0 , `recharge_num` = 0 , `deposit_num` = 0  WHERE  `id` = 19 [ RunTime:0.051003s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002001s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_member_address` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `id` FROM `xy_member_address` WHERE  `uid` = 19  AND `is_default` = 1 LIMIT 1 [ RunTime:0.026001s ]
+[ sql ] [ SQL ] SELECT SUM(`fudan_balance`) AS tp_sum FROM `xy_users` WHERE  `id` = 19 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_convey` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT SUM(`fudan_balance`) AS tp_sum FROM `xy_convey` WHERE  `uid` = 19  AND `is_fudan` = 1  AND `status` = 5  AND ( FROM_UNIXTIME(ADDTIME,'%Y-%m-%d')='2020-06-15' ) [ RunTime:0.036002s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] UPDATE `xy_users`  SET `deal_status` = 2  WHERE  `id` = 19 [ RunTime:0.038003s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_goods_list` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `xy_goods_list` WHERE  `cid` = 1 [ RunTime:0.032002s ]
+[ sql ] [ SQL ] SELECT `id` FROM `xy_member_address` WHERE  `uid` = 19  AND `is_default` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `deal_status`,`balance`,`level` FROM `xy_users` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_goods_list` WHERE  `goods_price` BETWEEN 16.1 AND 161   AND `cid` = 1 ORDER BY rand() LIMIT 1 [ RunTime:0.028002s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_level` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_level` WHERE  `level` = 0 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] UPDATE `xy_users`  SET `deal_status` = 3 , `deal_time` = 1592150400 , `deal_count` = deal_count+1  WHERE  `id` = 19 [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_goods_cate` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_goods_cate` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `xy_convey` (`id` , `uid` , `num` , `addtime` , `endtime` , `add_id` , `goods_id` , `goods_count` , `is_fudan` , `commission`) VALUES ('UB2006151557285344' , 19 , 156 , 1592207848 , 1592207868 , 173 , 69 , 2 , 0 , 0.546) [ RunTime:0.017001s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:57:30+08:00] 127.0.0.1 GET lxb.com/index/ctrl/order_info.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:57:31+08:00] 127.0.0.1 POST lxb.com/index/order/order_info
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_convey` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT xc.id oid,`xc`.`addtime`,`xc`.`commission`,`xc`.`num`,`xc`.`goods_count`,`xc`.`add_id`,`xg`.`goods_name`,`xg`.`cid`,`xg`.`goods_price`,`xg`.`shop_name`,`xg`.`goods_pic`,`ar`.`name`,`ar`.`tel`,`ar`.`address`,`u`.`balance` FROM `xy_convey` `xc` LEFT JOIN `xy_member_address` `ar` ON `ar`.`uid`=`xc`.`uid` LEFT JOIN `xy_goods_list` `xg` ON `xg`.`id`=`xc`.`goods_id` LEFT JOIN `xy_users` `u` ON `u`.`id`=`xc`.`uid` WHERE  `xc`.`id` = 'UB2006151557285344'  AND `xc`.`uid` = 19 LIMIT 1 [ RunTime:0.036002s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:59:28+08:00] 127.0.0.1 GET lxb.com/index/rot_order/index/1.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_convey` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT SUM(`commission`) AS tp_sum FROM `xy_convey` WHERE  `uid` = 19  AND `addtime` BETWEEN 1592150400 AND 1592207968   AND `status` IN (1,3,5) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_users` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT SUM(`freeze_balance`) AS tp_sum FROM `xy_users` WHERE  `id` = 19 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT SUM(`balance`) AS tp_sum FROM `xy_users` WHERE  `id` = 19 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT SUM(`fudan_balance`) AS tp_sum FROM `xy_users` WHERE  `id` = 19 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `xy_convey` WHERE  `uid` = 19  AND `addtime` BETWEEN 1592150400 AND 1592207968   AND `is_fudan` = 0  AND `status` IN (0,1,3,5) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(`num`) AS tp_count FROM `xy_convey` WHERE  `uid` = 19  AND `addtime` BETWEEN 1592150400 AND 1592207968   AND `status` = 5 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(`num`) AS tp_count FROM `xy_convey` WHERE  `uid` = 19  AND `addtime` BETWEEN 1592150400 AND 1592207968   AND `is_fudan` = 1  AND `status` IN (0,1,3,5) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(`num`) AS tp_count FROM `xy_convey` WHERE  `uid` = 19  AND `addtime` BETWEEN 1592150400 AND 1592207968   AND `status` = 0 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(`num`) AS tp_count FROM `xy_convey` WHERE  `uid` = 19  AND `addtime` BETWEEN 1592150400 AND 1592207968   AND `status` IN (1,3) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_reward_log` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT SUM(`num`) AS tp_sum FROM `xy_reward_log` WHERE  `uid` = 19  AND `addtime` BETWEEN 1592150400 AND 1592207968   AND `status` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `deal_count` FROM `xy_users` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_index_msg` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `content` FROM `xy_index_msg` WHERE  `id` = 9  AND `status` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_users` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_level` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_level` WHERE  `level` = 0 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_goods_cate` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_goods_cate` [ RunTime:0.000000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:59:29+08:00] 127.0.0.1 GET lxb.com/index/Index/getInfo
+[ sql ] [ DB ] CONNECT:[ UseTime:0.036002s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+
+[2020-06-15T15:59:29+08:00] 127.0.0.1 GET lxb.com/index/Index/getTongji
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015001s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_users` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `xy_users` WHERE  `status` = 1  AND `addtime` BETWEEN 1592064000 AND 1592207969 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_goods_list` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `xy_goods_list` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.008001s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_convey` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT SUM(`num`) AS tp_sum FROM `xy_convey` WHERE  `status` = 1  AND `endtime` BETWEEN 1592150400 AND 1592207969 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `xy_convey` WHERE  `status` = 1  AND `addtime` BETWEEN 1592150400 AND 1592207969 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+
+[2020-06-15T16:00:43+08:00] 127.0.0.1 GET lxb.com/index/rot_order/index/1.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_convey` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT SUM(`commission`) AS tp_sum FROM `xy_convey` WHERE  `uid` = 19  AND `addtime` BETWEEN 1592150400 AND 1592208043   AND `status` IN (1,3,5) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_users` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT SUM(`freeze_balance`) AS tp_sum FROM `xy_users` WHERE  `id` = 19 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT SUM(`balance`) AS tp_sum FROM `xy_users` WHERE  `id` = 19 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT SUM(`fudan_balance`) AS tp_sum FROM `xy_users` WHERE  `id` = 19 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `xy_convey` WHERE  `uid` = 19  AND `addtime` BETWEEN 1592150400 AND 1592208043   AND `is_fudan` = 0  AND `status` IN (0,1,3,5) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(`num`) AS tp_count FROM `xy_convey` WHERE  `uid` = 19  AND `addtime` BETWEEN 1592150400 AND 1592208043   AND `status` = 5 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(`num`) AS tp_count FROM `xy_convey` WHERE  `uid` = 19  AND `addtime` BETWEEN 1592150400 AND 1592208043   AND `is_fudan` = 1  AND `status` IN (0,1,3,5) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(`num`) AS tp_count FROM `xy_convey` WHERE  `uid` = 19  AND `addtime` BETWEEN 1592150400 AND 1592208043   AND `status` = 0 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(`num`) AS tp_count FROM `xy_convey` WHERE  `uid` = 19  AND `addtime` BETWEEN 1592150400 AND 1592208043   AND `status` IN (1,3) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_reward_log` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT SUM(`num`) AS tp_sum FROM `xy_reward_log` WHERE  `uid` = 19  AND `addtime` BETWEEN 1592150400 AND 1592208043   AND `status` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `deal_count` FROM `xy_users` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_index_msg` [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SELECT `content` FROM `xy_index_msg` WHERE  `id` = 9  AND `status` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_users` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_level` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_level` WHERE  `level` = 0 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_goods_cate` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `xy_goods_cate` [ RunTime:0.000000s ]
+---------------------------------------------------------------
+
+[2020-06-15T16:00:44+08:00] 127.0.0.1 GET lxb.com/index/Index/getInfo
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001001s ]
+---------------------------------------------------------------
+
+[2020-06-15T16:00:44+08:00] 127.0.0.1 GET lxb.com/index/Index/getTongji
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_script` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `script` FROM `xy_script` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_users` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `xy_users` WHERE  `status` = 1  AND `addtime` BETWEEN 1592064000 AND 1592208044 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_goods_list` [ RunTime:0.002001s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `xy_goods_list` [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `xy_convey` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT SUM(`num`) AS tp_sum FROM `xy_convey` WHERE  `status` = 1  AND `endtime` BETWEEN 1592150400 AND 1592208044 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=localhost;port=3306;dbname=shangcheng;charset=utf8mb4
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `xy_convey` WHERE  `status` = 1  AND `addtime` BETWEEN 1592150400 AND 1592208044 [ RunTime:0.001000s ]

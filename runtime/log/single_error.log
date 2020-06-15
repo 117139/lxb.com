@@ -12072,3 +12072,15 @@
 
 [2020-06-12T14:06:27+08:00] 182.243.105.150 GET lxb.com.aa.800123456.top/index/rot_order/index/1.html
 [ error ] [8]未定义变量: cate[/www/wwwroot/lxb.com/runtime/temp/c5a125127c6eae9415b91099c52e919f.php:87]
+---------------------------------------------------------------
+
+[2020-06-15T13:51:11+08:00] 127.0.0.1 POST lxb.com/index/user/do_login.html
+[ error ] [1045]SQLSTATE[HY000] [1045] Access denied for user 'lxb_com'@'localhost' (using password: YES)[E:\phpstudy_pro\WWW\lxb.com\thinkphp\library\think\db\Connection.php:528]
+---------------------------------------------------------------
+
+[2020-06-15T13:51:13+08:00] 127.0.0.1 POST lxb.com/index/user/do_login.html
+[ error ] [1045]SQLSTATE[HY000] [1045] Access denied for user 'lxb_com'@'localhost' (using password: YES)[E:\phpstudy_pro\WWW\lxb.com\thinkphp\library\think\db\Connection.php:528]
+---------------------------------------------------------------
+
+[2020-06-15T14:56:35+08:00] 127.0.0.1 POST lxb.com/index/user/do_login.html
+[ error ] [1045]SQLSTATE[HY000] [1045] Access denied for user 'lxb_com'@'localhost' (using password: YES)[E:\phpstudy_pro\WWW\lxb.com\thinkphp\library\think\db\Connection.php:528]

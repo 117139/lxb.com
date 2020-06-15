@@ -59,6 +59,7 @@ img{
 header {
     height: 2rem;
     background: #00BCD4;
+		/* background: #0035A0;	 */
     position: fixed;
     width: 100%;
     display: flex;
@@ -74,7 +75,7 @@ header {
     font-size: .8rem;
     color: white;
     /*background-image: linear-gradient(135deg, #f761a1 10%, #8c1bab 100%);*/
-    background-image: linear-gradient(135deg, #a26cd2  10%, #7a01f3 100%);
+    /* background-image: linear-gradient(135deg, #a26cd2  10%, #7a01f3 100%); */
 }
 header span{
     margin: auto;

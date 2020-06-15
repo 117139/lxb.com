@@ -46,15 +46,15 @@ return [
 
     // 数据库名
 
-    'database'    => 'lxb_com',
+    'database'    => 'shangcheng',
 
     // 用户名
 
-    'username'    => 'lxb_com',
+    'username'    => 'root',
 
     // 密码
 
-    'password'    => '3N4hFkfpb2Wed6iz',
+    'password'    => 'root',
 
     // 编码
 
