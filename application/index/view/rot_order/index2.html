@@ -1,0 +1,381 @@
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>抢单页面</title>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/statics/css/hui.css">
+
+    <script src="__ROOT__/static/plugs/jquery/jquery.min.js"></script>
+    <link rel="stylesheet" href="__ROOT__/public/js/layer_mobile/need/layer.css">
+    <script src="__ROOT__/public/js/ui.js"></script>
+    <script src="__ROOT__/public/js/layer_mobile/layer.js"></script>
+    <link rel="stylesheet" href="__ROOT__/public/css/ui.css">
+    <script src="__ROOT__/public/js/common.js"></script>
+    <style>
+        #yongjin{
+            position: relative;
+            top: -60px;
+            right:10px;;
+            text-align: right;
+						padding-top: 5px;
+        }
+        #yongjin span{
+            display: inline-block;
+            background: #0035A0;
+            padding:2px 5px;
+            font-size: 12px;
+            border-radius: 14px;
+            color: #fff;
+        }
+        .loading {
+            width: 2rem;
+            height: 2rem;
+            margin: auto;
+            background-image: url(__ROOT__/public/img/load.png);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            animation: load 2s linear infinite;
+
+        }
+				.hui-common-title-txt{
+					color: #795611;
+					font-weight: bold;
+				}
+				.hui-common-title-line{
+					background: #795611;
+				}
+				.user-wallet li{
+					width: 33.333%;
+					padding: 0;
+					margin: 1rem 0;
+				}
+				.user-wallet li span,.user-wallet li h3{
+					font-size: 13px;
+					color: #795611;
+				}
+				.user-wallet li:first-child:after {
+					display: none;
+				} 
+				.user-wallet li {
+					border-right: 1px solid #795611;
+					-webkit-box-sizing: border-box;
+					-moz-box-sizing: border-box;
+					box-sizing: border-box;
+				}
+				.user-wallet li:nth-child(3n){
+					border-right: 0;
+				}
+				.index_marqueen{
+					box-shadow:0px 1px 9px 0px rgba(159,159,159,0.71);border-radius:30px;
+				}
+				.btn_bg{
+					background-repeat: no-repeat;
+					background-size: 100% 100%;
+					position: relative;
+				}
+				.btn_yj{
+					position: absolute;
+					left: 50%;
+					margin-left: 60px;
+					font-size: 15px;
+					color: #fff;
+				}
+        @keyframes load {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+				header{
+					    background: #0035A0!important;
+				}
+    </style>
+</head>
+<body>
+<header class="hui-header">
+    <!-- <div id="hui-back"></div> -->
+    <h1 style="">
+        {$cate.name}
+    </h1>
+</header>
+<div class="hui-wrap" style="
+    background-image: linear-gradient(180deg,#FEEECB,#FFD789);
+">
+    <div class="hui-common-title" style="margin-top:15px;">
+        <div class="hui-common-title-line"></div>
+        <div class="hui-common-title-txt">今日佣金￥ {$day_deal|format='%.2f'} </div>
+        <div class="hui-common-title-line"></div>
+    </div>
+    <div id="yongjin"><span>佣金{$cate.bili*100}%</span></div>
+    <div class="user-wallet" style="background: rgba(0,0,0,0);">
+        <ul>
+            <li>
+                <a href="{:url('order/index')}">
+                    <span>今日已抢单数</span>
+                    <h3>{$day_d_count|default=0}/{$level.order_num}</h3>
+                </a>
+            </li>
+
+            <li>
+                <a href="{:url('order/index')}">
+                    <span>今日信用单数</span>
+                    <h3>{$fudan_day_l_count|default=0}/{$level.fudan_order_num}</h3>
+
+                </a>
+            </li>
+            <li>
+                <a href="{:url('order/index')}">
+                    <span>今日冻结单数</span>
+                    <h3>{$day_l_count|default=0}</h3>
+
+                </a>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <a href="{:url('order/index')}">
+                    <span>今日待处理单数</span>
+                    <h3>{$day_2_count|default=0}</h3>
+                </a>
+            </li>
+
+            <li>
+                <a href="{:url('order/index')}">
+                    <span>今日完成单数</span>
+                    <h3>{$day_3_count|default=0}</h3>
+
+                </a>
+            </li>
+            <li>
+                <a href="{:url('ctrl/wallet')}">
+                    <span>信用单未补齐金额</span>
+                    <h3>￥ {$price_d|format='%.2f'}</h3>
+
+                </a>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <a href="{:url('ctrl/wallet')}">
+                    <span>当前余额</span>
+                    <h3>￥ {$price|format='%.2f'}</h3>
+
+                </a>
+            </li>
+
+            <li>
+                <a href="{:url('ctrl/junior2')}">
+                    <span>团队总佣金</span>
+                    <h3>￥ {$team_num|format='%.2f'}</h3>
+
+                </a>
+            </li>
+            <li>
+                <a href="{:url('ctrl/junior2')}">
+                    <span>信用单佣金</span>
+                    <h3>￥ {$team_num|format='%.2f'}</h3>
+
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+<div style="background:#FFF; padding:0px 15px; margin:10px;" class="hui-flex index_marqueen">
+    <div style="height:46px; width:20px;">
+        <img src="__PUBLIC__/statics/img/spiker.png" width="20" style="padding:13px 0px;">
+    </div>
+
+
+    <div class="hui-scroll-news" id="scrollnew1">
+        <div class="hui-scroll-news-items     ">恭喜用户181****8896获得佣金0.66元</div>
+        <div class="hui-scroll-news-items     ">恭喜用户181****8896获得佣金0.76元</div>
+    </div>
+</div>
+
+
+<div style="padding:28px;margin-top: 0rem;">
+    <button type="button" class="hui-button hui-button-large self_btn" id="btn1" style=" background-color: #0035A0; color: #fff;" data-open="1">开启自动抢单</button>
+
+    <!-- <button type="button" class="hui-button hui-button-large" id="btn2" style="margin-top:20px;">停止抢单</button> -->
+</div>
+<div style="padding:0 28px 10px;margin-top: 0rem;">
+    <button type="button" class="hui-button hui-button-large self_btn2 btn_bg" id="btn2" style=" background-image:url('__PUBLIC__/public/img/order/order_bg.png'); color: #0035A0;" data-open="1">开启信用抢单
+        <span class="btn_yj">佣金{$level.fudan_bili*100}%</span></button>
+
+    <!-- <button type="button" class="hui-button hui-button-large" id="btn2" style="margin-top:20px;">停止抢单</button> -->
+</div>
+
+
+
+<div style="width:82%;margin-left:5%;background-color:#FFD072;margin-top:1rem;padding:1rem 1rem 1rem 1rem;font-size:0.6rem">
+    <div style="color:#0035A0;text-align: center;font-weight: bold;">
+        备注说明
+    </div>
+
+    <div style="color: #0035A0;">
+        {$xy_msg|raw}
+    </div>
+</div>
+
+<div class="hui-fooer-line"></div>
+{include file="public/floor" /}
+
+
+<!-- 隐藏域数值 -->
+<input type="hidden" name="qd_time_intvel" value="10">
+
+<input type="hidden" name="type" value="1">
+
+
+
+<script src="__ROOT__/statics/js/hui.js" type="text/javascript" charset="utf-8"></script>
+
+<script src="__ROOT__/public/js/swiper.min.js"></script>
+<script type="text/javascript">
+    hui.scrollNews(scrollnew1);
+    // hui.scrollNews(scrollnew2, 8000);
+</script>
+
+<script type="text/javascript">
+    var submit = true, status = false, timer = null, ajaxT = null,lay=0;
+
+	$('#btn2').click( function() {
+        $.ajax({
+            url:"{:url('isUserVip')}",
+            data:{},
+            type:"POST",
+            success:(res)=>{
+                if(res.code==1){
+                    if(res.is_vip===1){
+                        layer.open({
+                            content: '抢单中...<br/><div class="loading"></div>'
+                            , btn: ['停止抢单',],
+                            shadeClose: false
+                            , yes: function (index) {
+                                lay=index;
+                                clearTimeout(ajaxT);//清除抢单请求
+                                QS_toast.show('已停止抢单', true);
+                                layer.close(index)
+                            }
+                        });
+
+                        // 延时发送抢单请求
+                        ajaxT = setTimeout( function() {
+                            $.ajax({
+                                url: "{:url('submit_fudan_order')}",
+                                type: "POST",
+                                dataType: "JSON",
+                                data: {cid:"{$cate.id}"},
+                                success: function(res) {
+                                    console.log(res)
+                                    status = true;
+                                    if (res.code == 0) {
+                                        QS_toast.show(res.info, true);
+                                        layer.close(lay)
+                                        sessionStorage.setItem('oid', res.oid);
+                                        var timer = setTimeout(function() {
+                                            location.href = "{:url('ctrl/order_info')}"
+                                        }, 1800)
+                                    } else {
+                                        QS_toast.show(res.info, true)
+                                        layer.closeAll()
+                                    }
+
+                                },
+                                error: function(err) { console.log(err) }
+                            })
+                        },5)
+                    }else{
+                        layer.open({
+                            content:res.msg,
+                            btn:['确认'],
+                            yse:(index)=>{
+                                layer.close(index)
+                            }
+                        });
+                    }
+                }else{
+                    layer.open({
+                        content:res.msg,
+                        btn:['确认'],
+                        yse:(index)=>{
+                            layer.close(index)
+                        }
+                    });
+                }
+            },
+            error:(err)=>{
+                layer.open({
+                    content:'请求错误',
+                    btn:['确认'],
+                    yse:(index)=>{
+                        layer.close(index)
+                    }
+                });
+            }
+        });
+    });
+
+    $('.self_btn').click( function() {
+        layer.open({
+            content: '抢单中...<br/><div class="loading"></div>'
+            , btn: ['停止抢单',],
+            shadeClose: false
+            , yes: function (index) {
+                lay=index;
+                clearTimeout(ajaxT);//清除抢单请求
+                QS_toast.show('已停止抢单', true);
+                layer.close(index)
+            }
+        });
+
+        // 延时发送抢单请求
+        ajaxT = setTimeout( function() {
+            $.ajax({
+                url: "{:url('submit_order')}",
+                type: "POST",
+                dataType: "JSON",
+                data: {cid:"{$cate.id}"},
+                success: function(res) {
+                    console.log(res)
+                    status = true;
+                    if (res.code == 0) {
+                        QS_toast.show(res.info, true);
+                        layer.close(lay)
+                        sessionStorage.setItem('oid', res.oid);
+                        var timer = setTimeout(function() {
+                            location.href = "{:url('ctrl/order_info')}"
+                        }, 1800)
+                    } else {
+                        QS_toast.show(res.info, true)
+                        layer.closeAll()
+                    }
+
+                },
+                error: function(err) { console.log(err) }
+            })
+        },5000)
+    })
+</script>
+
+
+<script type="text/javascript">
+
+
+    // hui('#btn2').click(function(){
+    //     if(!window.plus){
+    //         hui.alert('停止抢单');
+    //         return false;
+    //     }
+    //     hui.h5Loading(false, '加载中...',{round:2, padding:'20px', textalign:'right'});
+    //     setTimeout(function(){hui.h5Loading(true);}, 2000);
+    // });
+</script>
+
+
+
+</body></html>
